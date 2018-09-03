@@ -7,20 +7,24 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {NaRoutingModule} from './na-routing-module';
 import {NaMainPageModule} from './na-main-page/na-main-page.module';
+import {NACommonModule} from './core/modules/common-module/n-a-common.module';
+import {NaAuthModule} from './na-auth/na-auth.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
+    NACommonModule,
     MatToolbarModule,
     MatMenuModule,
     MatButtonModule,
     BrowserAnimationsModule,
     HttpClientModule,
     NaRoutingModule,
-    NaMainPageModule
+    NaMainPageModule,
+    NaAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

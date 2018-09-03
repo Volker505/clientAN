@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import {NaResource} from '../core/services/an-resource/na-resource';
+import {IResourceMethod, ResourceAction, ResourceParams} from '@ngx-resource/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class NaMainPageService {
+@Injectable()
+@ResourceParams({pathPrefix: 'api'})
+export class NaMainPageService extends NaResource{
 
-  constructor() { }
+  @ResourceAction({
+  })getApi: IResourceMethod<null, any>
+
 }

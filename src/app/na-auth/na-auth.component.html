@@ -1,0 +1,19 @@
+<div class="main-login">
+  <mat-card *ngIf="true">
+    <div class="example-container">
+      <span>Вход</span>
+      <mat-form-field>
+        <input matInput placeholder="Имя/email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Пароль">
+      </mat-form-field>
+    </div>
+    <div class="button-block">
+      <button mat-raised-button color="primary" disabled="false">Войти</button>
+      <button mat-stroked-button color="primary" disabled="true">Регистрация</button>
+      <button mat-stroked-button color="primary" disabled="false">Войти через социальные сети</button>
+    </div>
+  </mat-card>
+  <na-registration *ngIf="false"></na-registration>
+</div>
