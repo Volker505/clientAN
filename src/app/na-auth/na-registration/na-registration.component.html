@@ -1,0 +1,29 @@
+<mat-card>
+  <form [formGroup]="formRegistration">
+    <div class="example-container">
+      <span>Регистрация</span>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Имя пользователя">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Пароль">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Пароль еще раз">
+      </mat-form-field>
+
+      <div class="button-block">
+        <button mat-raised-button color="primary" disabled="false">Зарегистрироваться</button>
+        <button mat-stroked-button color="primary" disabled="true">Войти через логин и пароль</button>
+        <button mat-stroked-button color="primary" disabled="false">Войти через социальные сети</button>
+      </div>
+
+    </div>
+  </form>
+</mat-card>
