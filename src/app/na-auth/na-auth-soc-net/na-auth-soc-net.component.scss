@@ -1,0 +1,12 @@
+.example-container{
+  display: flex;
+  flex-direction: column;
+  .buttonSocNet{
+    margin: 10px;
+  }
+}
+.button-block{
+  display: flex;
+  justify-content: space-around;
+}
+

@@ -1,10 +1,10 @@
-import { NACommonModule } from './n-a-common.module';
+import { NaCommonModule } from './na-common.module';
 
-describe('NACommonModule', () => {
-  let naCommonModuleModule: NACommonModule;
+describe('NaCommonModule', () => {
+  let naCommonModuleModule: NaCommonModule;
 
   beforeEach(() => {
-    naCommonModuleModule = new NACommonModule();
+    naCommonModuleModule = new NaCommonModule();
   });
 
   it('should create an instance', () => {

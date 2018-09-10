@@ -7,8 +7,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {NaRoutingModule} from './na-routing-module';
 import {NaMainPageModule} from './na-main-page/na-main-page.module';
-import {NACommonModule} from './core/modules/common-module/n-a-common.module';
+import {NaCommonModule} from './core/modules/common-module/na-common.module';
 import {NaAuthModule} from './na-auth/na-auth.module';
+import {NaSectionsModule} from './na-sections/na-sections.module';
 
 @NgModule({
   declarations: [
@@ -16,15 +17,13 @@ import {NaAuthModule} from './na-auth/na-auth.module';
   ],
   imports: [
     BrowserModule,
-    NACommonModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatButtonModule,
+    NaCommonModule,
     BrowserAnimationsModule,
     HttpClientModule,
     NaRoutingModule,
     NaMainPageModule,
-    NaAuthModule
+    NaAuthModule,
+    NaSectionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

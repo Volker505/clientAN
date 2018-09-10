@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { NaMainPageRoutingModule } from './na-main-page-routing.module';
 import { NaMainPageComponent } from './na-main-page.component';
-import {NACommonModule} from '../core/modules/common-module/n-a-common.module';
+import {NaCommonModule} from '../core/modules/common-module/na-common.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    NACommonModule,
+    NaCommonModule,
     NaMainPageRoutingModule
   ],
   declarations: [NaMainPageComponent]
