@@ -10,6 +10,9 @@ import {NaMainPageModule} from './na-main-page/na-main-page.module';
 import {NaCommonModule} from './core/modules/common-module/na-common.module';
 import {NaAuthModule} from './na-auth/na-auth.module';
 import {NaSectionsModule} from './na-sections/na-sections.module';
+import {NaUserModule} from './na-user/na-user.module';
+import {StoreModule} from '@ngrx/store';
+import {mainRedusers} from './core/store/reducers';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import {NaSectionsModule} from './na-sections/na-sections.module';
     NaRoutingModule,
     NaMainPageModule,
     NaAuthModule,
-    NaSectionsModule
+    NaSectionsModule,
+    NaUserModule,
+    StoreModule.forRoot(mainRedusers) //подключение стора
   ],
   providers: [],
   bootstrap: [AppComponent]

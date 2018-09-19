@@ -1,0 +1,39 @@
+.upper-block-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+
+  .title-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; //перенос на слудующую линию контейнеров
+
+
+    .card-img{
+      margin-left: 90px;
+      padding: 0px;
+      .img-title-block{
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+    .card-title{
+      margin-left: 20px;
+
+    }
+
+    .text{
+      font-size: 29px;
+    }
+
+  }
+
+  .bottom-block{
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    .text-content{
+      font-size: 20px;
+    }
+  }
+}
