@@ -1,0 +1,26 @@
+.main-user-profile {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+
+  justify-content: space-around;
+
+  .info-block {
+    .card-info-user {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .img-avatar {
+        max-width: 400px;
+        max-height: 300px;
+      }
+      .content{
+      }
+    }
+  }
+
+  .extended-info-block {
+  }
+}
