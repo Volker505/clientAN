@@ -14,7 +14,23 @@
   </div>
 
   <div class="extended-info-block">
-    <mat-card style="width: 800px">
+    <mat-card>
+      <div class="title-block">
+        <span class="user-name">Максим Чечин</span>
+        <span style="padding-bottom: 30px">Зарегистрирован: 02.10.18</span>
+        <div class="button-block-profile">
+          <a class="button-write-message" mat-stroked-button color="primary">Написать сообщение</a>
+          <a class="button-write-message" mat-stroked-button color="primary">Просмотреть избранное</a>
+          <a class="button-write-message" mat-stroked-button color="primary">Добавить в друзья</a>
+        </div>
+      </div>
+
+      <mat-tab-group>
+        <mat-tab label="Информация">
+          <na-edit-profile></na-edit-profile>
+        </mat-tab>
+        <mat-tab label="Редактирование"> Content 2 </mat-tab>
+      </mat-tab-group>
 
     </mat-card>
   </div>

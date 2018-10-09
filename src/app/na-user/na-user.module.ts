@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NaUserComponent } from './na-user.component';
 import {NaCommonModule} from '../core/modules/common-module/na-common.module';
 import {NaUserRoutingModule} from './na-user-routing.module';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   imports: [
@@ -10,6 +11,6 @@ import {NaUserRoutingModule} from './na-user-routing.module';
     NaCommonModule,
     NaUserRoutingModule
   ],
-  declarations: [NaUserComponent]
+  declarations: [NaUserComponent, EditProfileComponent]
 })
 export class NaUserModule { }

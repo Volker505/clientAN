@@ -1,0 +1,21 @@
+.main-chat-block{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+
+  .dialogues-block{
+    padding: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    height: 630px;
+    //flex: 2 2 auto;
+  }
+
+  .input-block{
+    padding: 5px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

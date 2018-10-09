@@ -4,7 +4,7 @@
   flex-direction: row;
   padding-bottom: 20px;
 
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   .info-block {
     .card-info-user {
@@ -22,5 +22,27 @@
   }
 
   .extended-info-block {
+    width: 830px;
+    display: flex;
+    flex-direction: column;
+    .title-block{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 30px;
+      .user-name{
+        font-size: 28px;
+        padding-bottom: 10px;
+      }
+      .button-block-profile{
+        display: flex;
+        justify-content: space-evenly;
+        .button-write-message{
+          width: 200px;
+        }
+
+      }
+
+    }
+
   }
 }

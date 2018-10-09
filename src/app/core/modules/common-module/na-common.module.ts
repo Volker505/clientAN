@@ -7,7 +7,7 @@ import {
   MatFormFieldModule,
   MatIconModule,
   MatInputModule,
-  MatMenuModule,
+  MatMenuModule, MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -21,7 +21,7 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-
+    MatTabsModule
   ],
   providers: [
     NaResource
@@ -33,7 +33,8 @@ import {
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule
   ],
   declarations: []
 })

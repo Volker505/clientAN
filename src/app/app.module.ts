@@ -13,6 +13,7 @@ import {NaSectionsModule} from './na-sections/na-sections.module';
 import {NaUserModule} from './na-user/na-user.module';
 import {StoreModule} from '@ngrx/store';
 import {mainRedusers} from './core/store/reducers';
+import {NaChatModule} from './na-chat/na-chat.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {mainRedusers} from './core/store/reducers';
     NaAuthModule,
     NaSectionsModule,
     NaUserModule,
+    NaChatModule,
     StoreModule.forRoot(mainRedusers) //подключение стора
   ],
   providers: [],
