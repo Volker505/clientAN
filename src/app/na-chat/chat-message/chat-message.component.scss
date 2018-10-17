@@ -1,0 +1,24 @@
+.main-massege-block{
+  display: flex;
+  margin-bottom: 15px;
+
+  .nick-name{
+    color: #00897B;
+    font-size: 18px;
+    flex: 1 ;
+     //justify-content: center;
+  }
+
+  .msg{
+    flex: 20 ;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  .date-time{
+    flex: 1  ;
+    color: #BDBDBD;
+
+  }
+}

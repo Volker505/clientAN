@@ -1,5 +1,5 @@
 .main-chat-block{
-  margin-top: 80px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
 
@@ -27,6 +27,11 @@
       }
 
     }
+    .div-dialog{
+      height: 555px;
+      overflow: auto;
+      margin-left: 10px;
+    }
   }
 
   .input-block{
@@ -35,5 +40,11 @@
     margin-right: 110px;
     margin-top: 10px;
     margin-bottom: 20px;
+    .mat-form-field{
+      width: 90%;
+    }
+    .button-send{
+      margin-left: 30px;
+    }
   }
 }

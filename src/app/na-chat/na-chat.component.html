@@ -2,32 +2,68 @@
   <mat-card class="dialogues-block">
     <mat-card class="tool-bar">
       <div class="content-user">
-        <img class="smoll-img" src="http://pristor.ru/wp-content/uploads/2017/06/Картинки-и-фото-на-аву-в-Ютуб-скачать-бесплатно-классные-крутые-21.jpg">
+        <img class="smoll-img"
+             src="http://pristor.ru/wp-content/uploads/2017/06/Картинки-и-фото-на-аву-в-Ютуб-скачать-бесплатно-классные-крутые-21.jpg">
         <span>Максим</span>
       </div>
       <div class="content-user">
-        <img class="smoll-img" src="http://pristor.ru/wp-content/uploads/2017/06/Картинки-и-фото-на-аву-в-Ютуб-скачать-бесплатно-классные-крутые-21.jpg">
+        <img class="smoll-img"
+             src="http://pristor.ru/wp-content/uploads/2017/06/Картинки-и-фото-на-аву-в-Ютуб-скачать-бесплатно-классные-крутые-21.jpg">
         <span>Максим</span>
       </div>
       <div class="content-user">
-        <img class="smoll-img" src="http://pristor.ru/wp-content/uploads/2017/06/Картинки-и-фото-на-аву-в-Ютуб-скачать-бесплатно-классные-крутые-21.jpg">
+        <img class="smoll-img"
+             src="http://pristor.ru/wp-content/uploads/2017/06/Картинки-и-фото-на-аву-в-Ютуб-скачать-бесплатно-классные-крутые-21.jpg">
         <span>Максим</span>
       </div>
 
     </mat-card>
 
+    <div class="div-dialog">
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+      <na-chat-message></na-chat-message>
+    </div>
   </mat-card>
 
   <mat-card class="input-block">
     <form class="form-message">
-      <mat-form-field [style.fontSize]="fontSize.value">
-        <mat-label>Autosize textarea</mat-label>
+      <mat-form-field>
+        <mat-label>Сообщение</mat-label>
         <textarea matInput
                   cdkTextareaAutosize
-                  #autosize="cdkTextareaAutosize"
                   cdkAutosizeMinRows="1"
-                  cdkAutosizeMaxRows="5"></textarea>
+                  cdkAutosizeMaxRows="3"></textarea>
       </mat-form-field>
+      <a mat-fab color="primary" class="button-send">
+        <mat-icon aria-label="Example icon-button with a heart icon">send</mat-icon>
+      </a>
     </form>
   </mat-card>
 </div>
