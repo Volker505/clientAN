@@ -23,9 +23,7 @@ import {
     MatIconModule,
     MatTabsModule
   ],
-  providers: [
-    NaResource
-  ],
+
   exports: [
     MatFormFieldModule,
     MatCardModule,
