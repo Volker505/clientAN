@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {WebSocketSubject} from 'rxjs/webSocket';
-import {Observable, Subject, Subscription} from 'rxjs';
+import {Subject, Subscription} from 'rxjs';
 
 
 @Injectable({ providedIn: 'root'})
@@ -45,9 +45,9 @@ export class WebSoketService {
 
           self.socket.unsubscribe();
 
-          setTimeout(() => {
+          setTimeout(() => {//todo сделать востоновление соединения по сокетам до минуты
             self.start(self.url);
-          }, 5000);
+          }, 2000);
 
         },
         complete: () => {
