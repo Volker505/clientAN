@@ -6,7 +6,8 @@ export const environment = {
   production: false,
 
   host: 'http://localhost:8081/',
-  hostChat: 'http://localhost:8080/'
+  hostChat: 'http://localhost:8080/',
+  wsHost: 'http://localhost:8080'
 };
 
 /*

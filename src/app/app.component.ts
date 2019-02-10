@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {WebSoketService} from './core/services/an-ws/web-soket.service';
-import {environmentChat} from './core/services/an-ws/share/environmentChat';
 
 @Component({
   selector: 'app-root',
