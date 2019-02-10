@@ -128,7 +128,7 @@ export class WebSoketService {
 //
 //   ngOnDestroy() {
 //     this.websocketSub.unsubscribe();
-//     this.statusSub.unsubscribe();
+//     this.statusSub.unsubscribe(); 777
 //   }
 //
 //
