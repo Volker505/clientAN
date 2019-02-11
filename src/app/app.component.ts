@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {WebSoketService} from './core/services/an-ws/web-soket.service';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +7,11 @@ import {WebSoketService} from './core/services/an-ws/web-soket.service';
 })
 export class AppComponent implements OnInit{
 
-  constructor(private wsService: WebSoketService ){
+  constructor(){
   }
 
 
   ngOnInit(): void {
-    // this.wsService.start(environmentChat.wsHost);//todo подключение сокетов только после логинизации (user service)
   }
 
 

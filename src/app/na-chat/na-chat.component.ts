@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {WebSoketService} from '../core/services/an-ws/web-soket.service';
 import {environment} from '../../environments/environment';
+import {AnWebsocketService} from '../core/services/an-ws/an-websocket.service';
 
 @Component({
   selector: 'app-na-chat',
@@ -9,15 +9,12 @@ import {environment} from '../../environments/environment';
 })
 export class NaChatComponent implements OnInit {
 
-  constructor(private webSoketService: WebSoketService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.webSoketService.start(environment.wsHost);
   }
 
   onmsg(){
-    this.webSoketService.sendMSG({event: 'event', data: '549999999'});
-
   }
 
 }
