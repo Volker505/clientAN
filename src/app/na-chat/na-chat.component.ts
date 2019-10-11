@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {environment} from '../../environments/environment';
-import {AnWebsocketService} from '../core/services/an-ws/an-websocket.service';
+import {CommonWSService} from '../core/services/an-webSocket/common-ws.service';
 
 @Component({
   selector: 'app-na-chat',
@@ -9,12 +9,18 @@ import {AnWebsocketService} from '../core/services/an-ws/an-websocket.service';
 })
 export class NaChatComponent implements OnInit {
 
-  constructor() { }
+  constructor(private webSocketService: CommonWSService) { }
 
   ngOnInit() {
+    this.webSocketService.on('newMsg').subscribe(data => console.log(data));
   }
 
   onmsg(){
+    this.webSocketService.send('onMessege', {a: Math.random()});
+  }
+
+  onconnectRoom() {
+    this.webSocketService.send('onEnterRoom', {id: 1111});
   }
 
 }

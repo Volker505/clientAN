@@ -1,4 +1,4 @@
-.main-container{
+.main-container {
   display: flex;
   flex-direction: row; //расположение
   flex-wrap: wrap; //перенос на слудующую линию контейнеров
@@ -9,6 +9,10 @@
   .example-card {
     margin-bottom: 15px;
     max-width: 300px;
+  }
+
+  .mat-card:hover {
+    box-shadow: 0 0 20px;
   }
 
   .example-header-image {

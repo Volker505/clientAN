@@ -52,6 +52,8 @@
     </div>
   </mat-card>
 
+  <h2 class="animated slideInRight">Exemple</h2>
+
   <mat-card class="input-block">
     <form class="form-message">
       <mat-form-field>
@@ -61,7 +63,11 @@
                   cdkAutosizeMinRows="1"
                   cdkAutosizeMaxRows="3"></textarea>
       </mat-form-field>
-      <a mat-fab color="primary" class="button-send" (click)="onmsg()">
+      <a mat-fab color="primary" class="button-send" (click)="onconnectRoom()">
+        <mat-icon aria-label="Example icon-button with a heart icon" >send</mat-icon>
+      </a>
+
+      <a mat-fab color="accent" class="button-send" (click)="onmsg()">
         <mat-icon aria-label="Example icon-button with a heart icon" >send</mat-icon>
       </a>
     </form>

@@ -7,7 +7,7 @@ export const environment = {
 
   host: 'http://localhost:8081/',
   hostChat: 'http://localhost:8080/',
-  wsHost: 'http://localhost:8080'
+  wsHost: 'ws://localhost:7000'
 };
 
 /*
